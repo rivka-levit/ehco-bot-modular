@@ -13,7 +13,8 @@ async def main():
 
     logging.basicConfig(
         level = logging.getLevelName(level=config.log.level),
-        format=config.log.format
+        format=config.log.format,
+        stream=sys.stdout
     )
 
 
